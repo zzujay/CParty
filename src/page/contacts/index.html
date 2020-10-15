@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>WeUI</title>
+        <!-- 引入 WeUI CDN 链接 -->
+        <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.3.0/weui.min.css"/>
+    </head>
+    <body>
+        
+ 
+		
+		
+		<div class="page" style="position:absolute;bottom:0 ;width: 100%;">
+		    <div class="page__bd" style="height: 100%;">
+		        <div class="weui-tab">
+		            <div class="weui-tab__panel">
+		
+		            </div>
+		            <div class="weui-tabbar">
+		                <div class="weui-tabbar__item weui-bar__item_on">
+		                    <div style="display: inline-block; position: relative;">
+		                        <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+		                    </div>
+		                    <p class="weui-tabbar__label">微信</p>
+		                </div>
+		                <div class="weui-tabbar__item">
+		                    <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+		                    <p class="weui-tabbar__label">通讯录</p>
+		                </div>
+		                <div class="weui-tabbar__item">
+		                    <div style="display: inline-block; position: relative;">
+		                        <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+		                    </div>
+		                    <p class="weui-tabbar__label">发现</p>
+		                </div>
+		                <div class="weui-tabbar__item">
+		                    <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+		                    <p class="weui-tabbar__label">我</p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<script type="text/javascript">
+		    $(function(){
+		        $('.weui-tabbar__item').on('click', function () {
+		            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+		        });
+		    });
+		</script>
+    </body>
+</html>
