@@ -1,9 +1,307 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html lang="en" style="height:100%";>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+        <title>WeUI</title>
+        <!-- 引入 WeUI -->
+		<link rel="stylesheet" href="../dist/style/weui.min.css"/>
+		<link rel="stylesheet" href="../dist/example.css"/>
+
+    <style type="text/css">
+        .badge-position{
+            position: absolute;
+            top: -.4em;
+            right: -.4em;
+		}
+		.nav-small-right{
+			 text-align: right;
+			 /* display: block; */
+        }
+    </style>
+    </head>
+	
+	<body ontouchstart>
+		<div class="container" id="container"></div>
+		<script src="zepto.min.js"></script>
+
+
+		
+    <div class="page__pd">
+		<div class="weui-search-bar" id="searchBar">
+		  <form class="weui-search-bar__form" action="#">
+			<div class="weui-search-bar__box">
+			  <i class="weui-icon-search"></i>
+			  <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+			  <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+			</div>
+			<label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+			  <i class="weui-icon-search"></i>
+			  <span>搜索</span>
+			</label>
+		  </form>
+		  <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+		</div>
+
+
+
+
+		<div class="weui-panel weui-panel_access js_item">
+		<div class="weui-panel__bd">
+
+			<!-- 虚拟好友 -->
+            <!-- 目前只做了这一个可以进入聊天框 -->
+			<a href="./chat.html" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/2.jpg" alt="">
+				<span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">3</span>
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小明
+				  <span class="nav-small-right">下午7:23</span>
+				</h4>
+				<p class="weui-media-box__desc">晚上一起吃饭吗？</p>
+			  </div>
+			</a>
+
+
+
+
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				<div class="weui-media-box__hd">
+				  <img class="weui-media-box__thumb" src="img/5.jpg" alt="">
+				  <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">12</span>
+				</div>
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title">
+					小红
+					<span class="weui-media-box__title-after">下午7:23</span>
+				  </h4>
+				  <p class="weui-media-box__desc">明天要交作业</p>
+				</div>
+			  </a>
+
+
+
+
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd ">
+				<img class="weui-media-box__thumb" src="img/3.jpg" alt="">
+				<span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">99+</span>
+			  </div>
+			  <div class="weui-media-box__bd  js_item" data-id="layers">
+				<h4 class="weui-media-box__title">
+				  小杨
+				  <span class="weui-media-box__title-after">上午10:15</span>
+				</h4>
+				<p class="weui-media-box__desc">笔记可以借抄一下不</p>
+			  </div>
+			</a>
+
+
+
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/4.jpg" alt="">
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小刘
+				  <span class="weui-media-box__title-after">下午8:12</span>
+				</h4>
+				<p class="weui-media-box__desc">小李明天早上帮我带两个包子，一个猪肉粉丝和一个奶黄包</p>
+			  </div>
+			</a>
+
+
+
+
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/5.jpg" alt="">
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小王
+				  <span class="weui-media-box__title-after">下午7:23</span>
+				</h4>
+				<p class="weui-media-box__desc">晚上的课延迟到下周了</p>
+			  </div>
+			</a>
+
+
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/6.jpg" alt="">
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小江
+				  <span class="weui-media-box__title-after">上午10:15</span>
+				</h4>
+				<p class="weui-media-box__desc">星期天有个展，要不要一起去看？</p>
+			  </div>
+			</a>
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/7.jpg" alt="">
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小一
+				  <span class="weui-media-box__title-after">下午8:12</span>
+				</h4>
+				<p class="weui-media-box__desc">[图片]</p>
+			  </div>
+			</a>
+
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/8.jpg" alt="">
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小花
+				  <span class="weui-media-box__title-after">下午7:23</span>
+				</h4>
+				<p class="weui-media-box__desc">[语音]</p>
+			  </div>
+			</a>
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/9.jpg" alt="">
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小川
+				  <span class="weui-media-box__title-after">上午10:15</span>
+				</h4>
+				<p class="weui-media-box__desc">[视频]>
+			  </div>
+			</a>
+			<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+			  <div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="img/10.jpg" alt="">
+			  </div>
+			  <div class="weui-media-box__bd">
+				<h4 class="weui-media-box__title">
+				  小菲
+				  <span class="weui-media-box__title-after">下午8:12</span>
+				</h4>
+				<p class="weui-media-box__desc">[图片]</p>
+			  </div>
+			</a>
+		  </div>
+		</div>
+	  </div>
+
+
+
+	  <style>
+		.weui-panel {
+		  margin: 0;
+		}
+		.weui-media-box {
+		  padding: 8px 15px;
+		}
+		.weui-panel__bd .weui-media-box__hd {
+		  width: 50px;
+		  height: 50px;
+		  line-height: 50px;
+		  position: relative;
+		}
+		.weui-media-box__desc {
+		  -webkit-line-clamp: 1;
+		}
+		.weui-media-box__title {
+		  margin-top: -4px;
+		}
+	  </style>
+
+
+		<script type="text/javascript">
+				$(function(){
+					var winH = $(window).height();
+					var categorySpace = 10;
+			
+					$('.js_item').on('click', function(){
+						var id = $(this).data('id');
+						window.pageManager.go(id);
+					});
+					$('.js_category').on('click', function(){
+						var $this = $(this),
+							$inner = $this.next('.js_categoryInner'),
+							$page = $this.parents('.page'),
+							$parent = $(this).parent('li');
+						var innerH = $inner.data('height');
+			
+						if(!innerH){
+							$inner.css('height', 'auto');
+							innerH = $inner.height();
+							$inner.removeAttr('style');
+							$inner.data('height', innerH);
+						}
+			
+						if($parent.hasClass('js_show')){
+							$parent.removeClass('js_show');
+						}else{
+							$parent.siblings().removeClass('js_show');
+			
+							$parent.addClass('js_show');
+							if(this.offsetTop + this.offsetHeight + innerH > $page.scrollTop() + winH){
+								var scrollTop = this.offsetTop + this.offsetHeight + innerH - winH + categorySpace;
+			
+								if(scrollTop > this.offsetTop){
+									scrollTop = this.offsetTop - categorySpace;
+								}
+			
+								$page.scrollTop(scrollTop);
+							}
+						}
+			
+						var winH = $(window).height();
+						var $foot = $('body').find('.page__ft');
+						if($foot.length < 1) return;
+			
+						if($foot.position().top + $foot.height() < winH){
+							$foot.addClass('j_bottom');
+						}else{
+							$foot.removeClass('j_bottom');
+						}
+					});
+				});
+			</script> 
+
+
+<!-- 微信导航栏 -->
+		<div class="page__bd page__bd_spacing">
+
+        </div>
+		<div class="weui-tab" >
+			<div class="weui-tab__panel">
+		
+			</div>
+			<div class="weui-tabbar tab-bottom">
+				<a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+					<img src="../dist/example/images/weixin.jpg" alt="" class="weui-tabbar__icon">
+					<p class="weui-tabbar__label">微信</p>
+				</a>
+				<a href="javascript:;" class="weui-tabbar__item">
+					<img src="../dist/example/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+					<p class="weui-tabbar__label">通讯录</p>
+				</a>
+				<a href="javascript:;" class="weui-tabbar__item">
+					<img src="../dist/example/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+					<p class="weui-tabbar__label">发现</p>
+				</a>
+				<a href="javascript:;" class="weui-tabbar__item">
+					<img src="../dist/example/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+					<p class="weui-tabbar__label">我</p>
+				</a>
+			</div>
+		</div> 
+
+
+    </body>
 </html>
