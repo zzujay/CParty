@@ -1,9 +1,111 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>me</title>
+        <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.3.0/weui.min.css"/>
+    </head>
+	<body style="background-color: var(--weui-BG-0);">
+        <div class="page" >
+            <div class="page__bd" style="height: 100%; ">
+                <div style="height:40px;width: 100%; background-color: #ffffff;">
+                    <img src="./images/xiangji.png" alt="" style="width: 25px;float: right; margin-right: 40px;margin-top: 10px;"> 
+                </div>
+                <div class="weui-tab">
+                    <div class="weui-tab__panel" >  
+                        <div class="weui-cells" style="margin-top: 0;">
+                            <a class="weui-cell  weui-cell_access weui-cell_example" href="javascript:">
+                                <div class="weui-cell__hd"><img src="./images/touxiang.png" alt="" style="width: 70px; margin-right: 20px; display: block;"></div>
+                                <div class="weui-cell__bd">
+                                    <p style="font-weight: 700;font-size: 22px;">社会主义接班人</p>
+                                    <p style="font-size: 14px;color: #a1a1a1; margin-top: 6px;">微信号：warm_people_as_sun</p>
+                                </div>
+                                <div class="weui-cell__ft" style="margin-top: 40px;">
+                                    <img src="./images/erweima.png"alt="" style="width: 18px; margin-right: 20px; display: block;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="weui-cells__title"></div>
+                        <div class="weui-cells">
+                            <a class="weui-cell  weui-cell_access weui-cell_example" href="javascript:">
+                                <div class="weui-cell__hd"><img src="./images/zhifu.png" alt="" style="width: 30px; margin-right: 16px; display: block;"></div>
+                                <div class="weui-cell__bd">
+                                    <p>支付</p>
+                                </div>
+                                <div class="weui-cell__ft"></div>
+                            </a>
+                        </div>
+                        <div class="weui-cells__title"></div>
+                        <div class="weui-cells">
+                            <a class="weui-cell  weui-cell_access weui-cell_example" href="javascript:">
+                                <div class="weui-cell__hd"><img src="./images/shoucang.png" alt="" style="width: 30px; margin-right: 16px; display: block;"></div>
+                                <div class="weui-cell__bd">
+                                    <p>收藏</p>
+                                </div>
+                                <div class="weui-cell__ft"></div>
+                            </a>
+                            <a class="weui-cell  weui-cell_access weui-cell_example" href="javascript:">
+                                <div class="weui-cell__hd"><img src="./images/xiangce.png" alt="" style="width: 30px; margin-right: 16px; display: block;"></div>
+                                <div class="weui-cell__bd">
+                                    <p>相册</p>
+                                </div>
+                                <div class="weui-cell__ft"></div>
+                            </a>
+                            <a class="weui-cell  weui-cell_access weui-cell_example" href="javascript:">
+                                <div class="weui-cell__hd"><img src="./images/kabao.png" alt="" style="width: 30px; margin-right: 16px; display: block;"></div>
+                                <div class="weui-cell__bd">
+                                    <p>卡包</p>
+                                </div>
+                                <div class="weui-cell__ft"></div>
+                            </a>
+                            <a class="weui-cell  weui-cell_access weui-cell_example" href="javascript:">
+                                <div class="weui-cell__hd"><img src="./images/biaoqing.png" alt="" style="width: 30px; margin-right: 16px; display: block;"></div>
+                                <div class="weui-cell__bd">
+                                    <p>表情</p>
+                                </div>
+                                <div class="weui-cell__ft"></div>
+                            </a>
+                        </div>
+                        <div class="weui-cells__title"></div>
+                        <div class="weui-cells">
+                            <a class="weui-cell  weui-cell_access weui-cell_example" href="javascript:">
+                                <div class="weui-cell__hd"><img src="./images/shezhi.png" alt="" style="width: 30px; margin-right: 16px; display: block;"></div>
+                                <div class="weui-cell__bd">
+                                    <p>设置</p>
+                                </div>
+                                <div class="weui-cell__ft"></div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="weui-tabbar" style="position:absolute;bottom:0 ;width: 100%;">
+                        <div class="weui-tabbar__item">
+                            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                            <p class="weui-tabbar__label">微信</p>
+                        </div>
+                        <div class="weui-tabbar__item">
+                            <img src="./images/tongxunlu.png" alt="" class="weui-tabbar__icon">
+                            <p class="weui-tabbar__label">通讯录</p>
+                        </div>
+                        <div class="weui-tabbar__item">
+                            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                            <p class="weui-tabbar__label">发现</p>
+                        </div>
+                        <div class="weui-tabbar__item weui-bar__item_on">
+                            <img src="./images/me.png" alt="" class="weui-tabbar__icon">
+                            <p class="weui-tabbar__label">我</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                $('.weui-tabbar__item').on('click', function () {
+                    $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+                });
+            });
+        </script>
 	</body>
 </html>
