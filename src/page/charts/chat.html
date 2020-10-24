@@ -6,9 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
         <title>WeUI</title>
         <!-- 引入 WeUI -->
-		<link rel="stylesheet" href="../dist/style/weui.min.css"/>
-		<link rel="stylesheet" href="../dist/example.css"/>
-        <link rel="stylesheet" type="text/css" href="css/jquery-weui.css"/>
+		<link rel="stylesheet" href="weui.min.css"/>
         <link rel="stylesheet" href="chat.css"> 
 
     </head>
@@ -51,22 +49,20 @@
 
         btn.onclick=function(){
             if(onOff)
-            // {
-                //  ul.innerHTML+="<li class='right'><div>"+imgWrap.innerHTML+"</div><div class='inps'>"+inp.value+"</div><br></li>";//聊天记录从上往下走
-                // // ul.innerHTML="<li class='left'><div>"+imgWrap.innerHTML+"</div><div class='inps'>"+inp.value+"</div><br></li>"+ul.innerHTML;//聊天记录从下往上走 后面的放在上面
-                // inp.value="";
-            // }
-            // else{
+
                 ul.innerHTML+="<li class='right'><div>"+imgWrap.innerHTML+"</div><div class='inpss'>"+inp.value+"</div><br></li>";
 
+
+                //目前这一块自动回复只写了匹配nihao这一点，后续要设置回复的消息
                 if(inp.value=='nihao'){
 
                     ul.innerHTML+="<li class='left'><div>"+imgWrapleft.innerHTML+"</div><div class='inps'>"+"nihao"+"</div><br></li>";
-                    inp.value="";
-
+                   inp.value="";
                 }
+
+
                 inp.value="";
-            // }
+
         }
         
     </script>
