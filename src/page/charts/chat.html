@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
         <title>WeUI</title>
         <!-- 引入 WeUI -->
-		<link rel="stylesheet" href="weui.min.css"/>
+		<link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.3.0/weui.min.css"/>
         <link rel="stylesheet" href="chat.css"> 
 
     </head>
@@ -53,10 +53,10 @@
                 ul.innerHTML+="<li class='right'><div>"+imgWrap.innerHTML+"</div><div class='inpss'>"+inp.value+"</div><br></li>";
 
 
-                //目前这一块自动回复只写了匹配nihao这一点，后续要设置回复的消息
-                if(inp.value=='nihao'){
+                //目前这一块自动回复只写了匹配你好这一点，后续要设置回复的消息
+                if(inp.value=='你好'){
 
-                    ul.innerHTML+="<li class='left'><div>"+imgWrapleft.innerHTML+"</div><div class='inps'>"+"nihao"+"</div><br></li>";
+                    ul.innerHTML+="<li class='left'><div>"+imgWrapleft.innerHTML+"</div><div class='inps'>"+"你好呀"+"</div><br></li>";
                    inp.value="";
                 }
 
