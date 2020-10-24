@@ -1,0 +1,69 @@
+.header{
+    height: 300px;
+    width: 100%;
+    background:url('./images/2.png')  no-repeat ;
+    background-size:100% 100%;
+}
+.content{
+    width: 100%;
+    /* height: 400px; */
+    
+    padding: 0;
+    margin: 0;
+}
+.headcion{
+    margin-left:  10px;
+    width: 11%;
+    float: left;
+   
+}
+.headcion img{
+    width: 100%;
+    height: 100%;
+}
+.right{
+    margin-left: 5px;
+    width: 82%;
+    /* background: ivory; */
+    float: left;
+}
+.nickname p{
+    font-size: 1em;
+    color:#5E6C93 ;
+    font-weight: 1000;
+}
+.photo{
+    width: 100%;
+    /* height: 400px; */
+    /* background: red; */
+}
+.photo table{
+    border: 0;
+    width: 100%;
+    /* height: 300px; */
+    background:white;    
+}
+.photo table tr {
+    /* width: 100px; */
+    /* height: 100px; */
+    background: black;
+}
+.photo table tr td{
+    width: 33%;
+    height: 90px;
+    background: white;
+}
+.photo table tr td img{
+    width: 100%;
+    
+}
+.time{
+    padding-top: 5px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.time p{
+    font-size: 12px;
+    font-style: inherit;
+    color: #828282;
+}
